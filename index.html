@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lakshita Kumawat — Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbot.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <p class="eyebrow">Personal Profile</p>
+      <h1>Lakshita Kumawat</h1>
+      <p class="Graduation Student">Btech Student</p>
+    </header>
+
+    <main>
+      <section class="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          I am a Btech student at the JECRC University. I am currently in my second year of study. I am interested in web development and machine learning.
+             </p>
+        <p>
+      </section>
+
+      <section class="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Responsive design</li>
+        </ul>
+      </section>
+
+      <section class="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <ul>
+          <li>
+            <a href="https://PLACEHOLDER-project-one.example.com">
+              Portfolio Website
+            </a>
+            <p>A portfolio website for myself.</p>
+          </li>
+          <li>
+            <a href="https://PLACEHOLDER-project-two.example.com">
+              Weather App         </a>
+            <p>A weather app that shows the weather of a city.</p>
+          </li>
+          <li>
+            <a href="https://PLACEHOLDER-project-three.example.com">
+              Todo list
+            </a>
+            <p>A todo list that allows you to add, delete and edit tasks.</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <section id="weather">
+      <h2>Weather</h2>
+  
+      <input
+          type="text"
+          id="cityInput"
+          placeholder="Enter a city"
+      >
+  
+      <button id="weatherButton">
+          Get Weather
+      </button>
+  
+      <div id="weatherResult">
+          Enter a city to see the weather.
+      </div>
+  </section>
+  <section id="aiChatSection" class="ai-chat">
+    <h2>Ask My AI Assistant</h2>
+  
+    <p>
+      Ask questions about this portfolio,
+      projects, and technologies.
+    </p>
+  
+    <div
+      id="chatMessages"
+      aria-live="polite"
+    ></div>
+  
+    <div class="chat-controls">
+      <input
+        type="text"
+        id="userInput"
+        placeholder="Ask a question..."
+      />
+  
+      <button id="sendButton" type="button">
+        Send
+      </button>
+    </div>
+  
+    <p id="chatStatus" role="status"></p>
+  
+    <p class="chat-note">
+      AI chat is available during the local
+      classroom demonstration only.
+    </p>
+  </section>
+    <footer class="site-footer">
+      <p>Lakshita Kumawat · lakshita.kumawat@je.com</p>
+    </footer>
+    <button id="themeToggle">Switch to Dark Mode</button>
+    <script src="script.js"></script>
+    <script src="config.js"></script>
+<script src="chatbot.js"></script>
+  </body>
+</html>
