@@ -34,27 +34,34 @@
         </ul>
       </section>
 
-      <section class="projects" aria-labelledby="projects-heading">
-        <h2 id="projects-heading">Projects</h2>
-        <ul>
-          <li>
-            <a href="https://PLACEHOLDER-project-one.example.com">
-              Portfolio Website
-            </a>
-            <p>A portfolio website for myself.</p>
-          </li>
-          <li>
-            <a href="https://PLACEHOLDER-project-two.example.com">
-              Weather App         </a>
-            <p>A weather app that shows the weather of a city.</p>
-          </li>
-          <li>
-            <a href="https://PLACEHOLDER-project-three.example.com">
-              Todo list
-            </a>
-            <p>A todo list that allows you to add, delete and edit tasks.</p>
-          </li>
-        </ul>
+      <section class="my-projects" id="my-projects" aria-labelledby="my-projects-heading">
+        <h2 id="my-projects-heading">My Projects</h2>
+
+        <div class="project-toolbar">
+          <div class="project-search-wrap">
+            <label class="visually-hidden" for="projectSearch">Search projects</label>
+            <input
+              type="search"
+              id="projectSearch"
+              placeholder="Search projects by name or technology..."
+              autocomplete="off"
+            />
+            <button type="button" id="clearProjectSearch">Clear</button>
+          </div>
+
+          <div class="project-filters" role="group" aria-label="Filter by technology">
+            <button type="button" class="filter-btn is-active" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="python" aria-pressed="false">Python</button>
+            <button type="button" class="filter-btn" data-filter="javascript" aria-pressed="false">JavaScript</button>
+            <button type="button" class="filter-btn" data-filter="html-css" aria-pressed="false">HTML/CSS</button>
+            <button type="button" class="filter-btn" data-filter="cursor-ai" aria-pressed="false">Cursor AI</button>
+          </div>
+        </div>
+
+        <p id="projectEmpty" class="project-empty" hidden>
+          No projects found. Try another search.
+        </p>
+        <ul id="projectList" class="project-list"></ul>
       </section>
     </main>
     <section id="weather">
